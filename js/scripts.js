@@ -47,6 +47,26 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
+    $('.wp10').waypoint(function () {
+        $('.wp10').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp11').waypoint(function () {
+        $('.wp11').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wp12').waypoint(function () {
+        $('.wp12').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wp13').waypoint(function () {
+        $('.wp13').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
 
     /***************** Initiate Flexslider ******************/
     $('.flexslider').flexslider({
