@@ -50,10 +50,10 @@
                             <li><a href="#events">Eventos</a></li>
                             <li><a href="#gifts">Mesa de regalos</a></li>
                             <li><a href="#eng-pics">Galería</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">¿Dónde es la boda?</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#location">¿Dónde es la boda?</a></li>
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Ubicación</a></li>
+                            <li><a href="#location" class="login">Ubicación</a></li>
                             <li><a href="#rsvp" class="btn-white btn-small">Confirma tu asistencia</a></li>
                         </ul>
                     </nav>
@@ -150,7 +150,7 @@
                     <h5>&#x26EA Misa <span class="time">2:30 - 3:30PM</span></h5>
                     <p> 
                         El momento más importante donde juraremos amor eterno ante Dios.
-                        La ceremonia será en la <a href="https://goo.gl/maps/6Jb3ofocJUJhm68p8" class="login">iglesia de Santo Tomás Jalieza</a></li>.
+                        La ceremonia será en la <a style="cursor: pointer;"; data-toggle="modal" data-target="#iglesia-modal">iglesia de Santo Tomás Jalieza</a>.
                     </p>
                 </div>
                 <div class="wp4">
@@ -228,16 +228,49 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <h3 class="text-center section-padding">Quinta Elisa</h3>
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                        <img width="90%" src="img/quinta-elisa.png">
+                    </div>
                     <p>
                         <strong>Ubicación</strong>
                         <a href="https://goo.gl/maps/mPa3NEwuhRkKgscb7">Industria 304, Ocotlán de Morelos, Oaxaca. CP 71510.</a>
-                        <br><br>
+                        <br>
                         <strong>Direcciones</strong>
                         <ul class="list-group">
                             <li class="list-group-item">Dirigete hacía Ocotlán de Morelos.</li>
                             <li class="list-group-item">Antes de llegar a la entrada de Ocotlán, justo en frente de la gasolinería, da vuelta a la izquierda en la calle Francisco Villa.</li>
                             <li class="list-group-item">Continua sobre la calle Francisco Villa, y da vuelta en la primera cuadra hacía la derecha en la calle Industria.</li>
                             <li class="list-group-item">Has llegado, la fachada de la quinta Elisa es color amarillo. Puedes estacionar en la calle, es seguro.</li>
+                        </ul>
+
+                        
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="iglesia-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Iglesia de Santo Tomás Jalieza</h3>
+                        
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                        <img width="90%" src="img/iglesia-jalieza-2.png">
+                    </div>
+                    <p>
+                        <br>
+                        <strong>Ubicación</strong>
+                        <a href="https://goo.gl/maps/t14zPrRbtrwfC5MS7"> Santo Tomás Jalieza, Oaxaca. C.P 71510</a>
+                        <br>
+                        <strong>Direcciones</strong>
+                        <ul class="list-group">
+                            <li class="list-group-item">Desde la ciudad de Oaxaca, toma la carretera Oaxaca-Puerto Ángel</li>
+                            <li class="list-group-item">La comunidad se ubica en el KM 25.5</li>
+                            <li class="list-group-item">Una vez en la población, dirígete al centro. La iglesia está en frente del parque municipal.</li>
                         </ul>
 
                         
@@ -284,7 +317,7 @@
         </div>
         <div class="row section-border wp7">
             <div class="col-md-4 col-md-offset-4">
-                <img src="img/social_fb.png">
+                <img src="img/iglesia-jalieza-2.png">
             </div>
         </div>
     </div>
@@ -393,63 +426,59 @@
 
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/-gChpCdmepA',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:12, stopAt:48, opacity:1}">
+         data-property="{videoURL:'https://youtu.be/-53NZz5-_ms',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:1, stopAt:25, opacity:1}">
     </div>
     <div id="video-content">
-        <h5>Querétaro</h5>
-        <p>Ciudad de historia</p>
+        <h5>Oaxaca</h5>
+        <p>Ciudad de fiesta y alegría</p>
     </div>
 </section>
 
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>¿Cómo llego al salón?</h3>
-        <p>
-          Aquí te dejamos la ubicación exacta y algunos tips para encontrar facilmente el salón.
-          <br>
-          <ul class="list-group">
-            <li class="list-group-item"> El salón se encuentra en Av. Concord, para entrar a esta avenida debes tomar el Anillo Vial Fray Junípero Serra.</li>
-            <li class="list-group-item"> Una vez que estés en Av. Concord, dejaremos unas cartulinas pegadas en los postes indicando la dirección al salón.</li>
-            <li class="list-group-item"> En en salón hay un amplio estacionamiento donde podrás dejar tu auto.</li>
-          </ul>
-        </p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
+<section id="location" class="section-padding">
+    <div class="container">
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Mostrar información
-                    </div>
+            <div class="col-md-12 text-center">
+                <h3>¿Dónde es la boda?</h3>
+            </div>
+        </div>
+        <div class="row section-border wp7 text-center">
+            <div class="row section-padding">
+                <div class="col  text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#iglesia-modal">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; MISA
+                    </a>
                 </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Salón de eventos Ébano</h5>
-                            <p><a href="https://goo.gl/maps/58z4DvKr4XdfMgX5A">Av Concord, La Purísima, 76140 Santiago de Querétaro, Qro.</a></p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>
-                                Cerca de plaza comercial Paseo Querétaro.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                            href="https://m.uber.com/ul/?action=setPickup&client_id=pCf9p3ddUfr_22ZzqUwf3NnUfSMCpiW2&pickup=my_location&dropoff[formatted_address]=Salon%20Ebano&dropoff[latitude]=20.630429106900284&dropoff[longitude]=-100.3535942696167"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Pedir Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver mapa</a>
-                        </div>
-                    </div>
+                <br>
+                <div class="col text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#quinta-modal">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; RECEPCIÓN
+                    </a>
                 </div>
             </div>
         </div>
+        <!-- <div class="row section-border wp7 text-center">
+            <p>
+                <strong>MISA</strong>
+                <br>
+                <a style="cursor: pointer;"; data-toggle="modal" data-target="#iglesia-modal">Iglesia de Santo Tomás Jalieza</a>
+            </p>
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/iglesia-jalieza-2.png">
+            </div>
+        </div>
+        <div class="row section-border wp7 text-center">
+            <p>
+                <strong>RECEPCIÓN</strong>
+                <br>
+                <a style="cursor: pointer;"; data-toggle="modal" data-target="#quinta-modal">Quinta Elisa</a>
+            </p>
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/quinta-elisa.png">
+            </div>
+        </div> -->
     </div>
 </section>
+
 
 <section class="rsvp text-center" id="rsvp">
 
@@ -544,8 +573,7 @@
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS_hnMbLsf0tznyriubiCtPPt2oBcXgxk&callback=initMap"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6WBFQRSDF"></script>
 <script>
