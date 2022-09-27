@@ -207,7 +207,7 @@ $(document).ready(function () {
             title: "Boda Dany y Laura",
 
             // Event start date
-            start: new Date('Nov 19, 2022 2:30'),
+            start: new Date('Nov 19, 2022 14:30'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -217,7 +217,7 @@ $(document).ready(function () {
             end: new Date('Nov 19, 2022 23:59'),
 
             // Event Address
-            address: 'Hidalgo, 71507 Santo Tomás Jalieza, Oax., México',
+            address: 'Iglesia Santo Tomás Jalieza Hidalgo, 71507 Santo Tomás Jalieza, Oax., México',
 
             // Event Description
             description: "Estamos muy emocionados de compartir este día contigo. Si tienes dudas, escríbenos o llámanos con confianza"
