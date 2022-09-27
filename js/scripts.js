@@ -204,7 +204,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Boda de Dany&Laura",
+            title: "Boda Dany y Laura",
 
             // Event start date
             start: new Date('Nov 19, 2022 2:30'),
@@ -238,7 +238,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '3b712de48137572f3849aabd5666a4e3') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Disculpa!</strong> El código es incorrecto.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbwV5XqtP18pIz8B0H392UFYfKdh9nmyGhtaI3bbgdsKKjfQVz5sT5o_Xut9nl6alV_H/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbywov4NxfqTdl0MM5pcepdbsUO81e0AVxWV2tLemsd4yZWVbkuy0YWz0sJVLV1LqYBR/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
