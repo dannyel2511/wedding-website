@@ -207,17 +207,17 @@ $(document).ready(function () {
             title: "Boda de Dany&Laura",
 
             // Event start date
-            start: new Date('Jun 11, 2022 15:00'),
+            start: new Date('Nov 19, 2022 2:30'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Jun 11, 2022 23:00'),
+            end: new Date('Nov 19, 2022 23:59'),
 
             // Event Address
-            address: 'Salón de eventos Ébano, Ac, Concord, La Purísima, 76140 Santiago de Querétaro, Qro., México',
+            address: 'Hidalgo, 71507 Santo Tomás Jalieza, Oax., México',
 
             // Event Description
             description: "Estamos muy emocionados de compartir este día contigo. Si tienes dudas, escríbenos o llámanos con confianza"
