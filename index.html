@@ -142,6 +142,18 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3 private-events">
+                    <h5>🌞 Desayuno <span class="time">8:00 - 10:00AM</span></h5>
+                    <p> 
+                        Nos encantaría que nos acompañes a desayunar un delicioso chocolate con pan 🥐☕
+                    </p>
+                </div>
+                <div class="wp4 private-events">
+                    <h5>🍴 Almuerzo <span class="time">11:00AM - 12:00PM</span></h5>
+                    <p> 
+                        ¡No puede faltar el almuerzo antes de la ceremonia! 😋
+                    </p>
+                </div>
                 <div class="wp3">
                     <p>
                       <strong>CEREMONIA RELIGIOSA</strong>
@@ -506,15 +518,38 @@
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                    <h4 style="color: #3d4351; font-weight: bold;">¿Podrás asistir?</h4>
+                    <!-- Div accept/decline confirmation -->
+                    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="form-check col-md-12 col-sm-12">
+                            <input class="form-check-group radio-confirmation" type="radio" id="confirmationRadio1" name="confirmation" value="Sí" required>
+                            <label class="form-check-label" for="confirmationRadio1" style="font-weight: normal;">
+                                ¡Sí, allá nos vemos 🥳!
+                            </label>
+                        </div>
+                        <div class="form-check col-md-12 col-sm-12">
+                            <input class="form-check-group radio-confirmation" type="radio" id="confirmationRadio2" name="confirmation" value="No" required>
+                            <label class="form-check-label" for="confirmationRadio2" style="font-weight: normal;">
+                                No, no podré acompañarlos 🥺
+                            </label>
+                        </div>
+                    </div>
+                    <!-- END div accept/decline confirmation -->
+                    <div class="row" id="div-form-inputs">
+                        <p class="col-md-12 col-sm-12 form-unconfirm">
+                            ¡Te vamos a extrañar! Pero no te preocupes, entendemos que a veces los tiempos no coinciden.<br>
+                            ¿Te gustaría dejarnos algún mensaje?
+                        </p>
+
+                        <div class="col-md-6 col-sm-6 form-initial-hide" id="div_name">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
+                                                                 id="input_name"
                                                                  placeholder="Tu nombre completo"
                                                                  required>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6" id="div_invite_code">
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
@@ -522,30 +557,36 @@
                                                                 required>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 form-confirm">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="adults" class="" min="0"
+                                                                  id="input_adults"
                                                                   max="5"
                                                                   placeholder="Número de adultos"
                                                                   required>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 form-confirm">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="children" class="" min="0"
+                                                                  id="input_children"
                                                                   max="5"
                                                                   placeholder="Número de niños"
                                                                   required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 col-sm-12 form-unconfirm">
+                            <div class="comment-area form-input-group">
+                                <textarea name="message" class="form-control" rows="2" placeholder="Buzón de deseos ✨"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
-                        Enviar mi confirmación
+                    <button class="btn-fill rsvp-btn" id="form-submit-button">
+                        Enviar respuesta
                     </button>
                 </form>
             </div>

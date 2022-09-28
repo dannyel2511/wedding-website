@@ -226,7 +226,58 @@ $(document).ready(function () {
 
     $('#add-to-cal').html(myCalendar);
 
+    /********************** document ready ***********/
+    // Retrieve get params
+    const querystring = window.location.search;
+    const get_params = new URLSearchParams(querystring);
+    // Validate weather it should include all the events (breakfast and lunch)
+    inc_all_events = get_params.get('f');
+    if (inc_all_events != null) {
+        console.log('mostrar todo');
+        $('.private-events').show();
+    }
+    else {
+        console.log('ocultar');
+        $('.private-events').hide();
+    }
+    // Hide invite code
+    const invitee_code = 1122;
+    $('#invite_code').val(invitee_code);
+    $('#div_invite_code').hide();
+    // Hide confirmation form fields
+    $('.form-confirm').hide();
+    $('.form-unconfirm').hide();
+    $('.form-initial-hide').hide();
 
+    /********************** Prefield form *************/
+    $('.radio-confirmation').change( function () {
+        $('#div-form-inputs').removeClass('animated fadeInLeft');
+        $('#form-submit-button').removeClass('animated fadeInLeft');
+        $('.form-initial-hide').show();
+        radio_val = this.value;
+        if (radio_val == 'Sí') {
+            $('#div_name').removeClass('col-md-12 col-sm-12').addClass('col-md-6 col-sm-6');
+            $('.form-confirm').show();
+            $('.form-unconfirm').hide();
+            $('#form-submit-button').html('Enviar mi confirmación');
+            // Retrieve get params
+            adults = get_params.get('a');
+            children = get_params.get('n');
+        }
+        else if (radio_val == 'No') {
+            $('#div_name').removeClass('col-md-6 col-sm-6').addClass('col-md-12 col-sm-12');
+            $('.form-confirm').hide();
+            $('.form-unconfirm').show();
+            $('#form-submit-button').html('Enviar mi mensaje');
+            // Set default params
+            adults = 0;
+            children = 0;
+        }
+        $('#div-form-inputs').addClass('animated fadeInLeft');
+        $('#form-submit-button').addClass('animated fadeInLeft');
+        $('#input_adults').val(adults);
+        $('#input_children').val(children);
+    });
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
