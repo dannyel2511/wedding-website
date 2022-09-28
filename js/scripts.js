@@ -250,12 +250,13 @@ $(document).ready(function () {
     $('.form-initial-hide').hide();
 
     /********************** Prefield form *************/
+    var radio_val = 'no'
     $('.radio-confirmation').change( function () {
         $('#div-form-inputs').removeClass('animated fadeInLeft');
         $('#form-submit-button').removeClass('animated fadeInLeft');
         $('.form-initial-hide').show();
         radio_val = this.value;
-        if (radio_val == 'Sí') {
+        if (radio_val == 'yes') {
             $('#div_name').removeClass('col-md-12 col-sm-12').addClass('col-md-6 col-sm-6');
             $('.form-confirm').show();
             $('.form-unconfirm').hide();
@@ -264,7 +265,7 @@ $(document).ready(function () {
             adults = get_params.get('a');
             children = get_params.get('n');
         }
-        else if (radio_val == 'No') {
+        else if (radio_val == 'no') {
             $('#div_name').removeClass('col-md-6 col-sm-6').addClass('col-md-12 col-sm-12');
             $('.form-confirm').hide();
             $('.form-unconfirm').show();
@@ -296,7 +297,12 @@ $(document).ready(function () {
                         $('#alert-wrapper').html(alert_markup('danger', data.message));
                     } else {
                         $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
+                        if (radio_val == 'yes') {
+                          $('#rsvp-modal-yes').modal('show');
+                        }
+                        else {
+                          $('#rsvp-modal-no').modal('show');
+                        }
                     }
                 })
                 .fail(function (data) {

@@ -494,7 +494,7 @@
 
 <section class="rsvp text-center" id="rsvp">
 
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div id="rsvp-modal-yes" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -510,6 +510,20 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <div id="rsvp-modal-no" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                  </button>
+                  <div class="section-padding">
+                      <h3>¡Gracias por tu mensaje!</h3>
+                  </div>
+              </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -522,13 +536,13 @@
                     <!-- Div accept/decline confirmation -->
                     <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
                         <div class="form-check col-md-12 col-sm-12">
-                            <input class="form-check-group radio-confirmation" type="radio" id="confirmationRadio1" name="confirmation" value="Sí" required>
+                            <input class="form-check-group radio-confirmation" type="radio" id="confirmationRadio1" name="confirmation" value="yes" required>
                             <label class="form-check-label" for="confirmationRadio1" style="font-weight: normal;">
                                 ¡Sí, allá nos vemos 🥳!
                             </label>
                         </div>
                         <div class="form-check col-md-12 col-sm-12">
-                            <input class="form-check-group radio-confirmation" type="radio" id="confirmationRadio2" name="confirmation" value="No" required>
+                            <input class="form-check-group radio-confirmation" type="radio" id="confirmationRadio2" name="confirmation" value="no" required>
                             <label class="form-check-label" for="confirmationRadio2" style="font-weight: normal;">
                                 No, no podré acompañarlos 🥺
                             </label>
