@@ -2,27 +2,25 @@
   "name": "wedding-website",
   "version": "1.0.1",
   "description": "A wedding website with loads of features.",
-  "main": "npmfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
-  },
   "keywords": [
     "wedding",
     "template",
     "website template"
   ],
-  "author": "Ram Patra",
-  "license": "GPL-3.0",
   "homepage": "https://github.com/rampatra/wedding-website",
-  "devDependencies": {
-    "gulp": "^5.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^6.0.1",
-    "gulp-uglify": "^3.0.2"
+  "bugs": {
+    "url": "https://github.com/rampatra/wedding-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rampatra/wedding-website.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Ram Patra",
+  "type": "commonjs",
+  "main": "npmfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
@@ -30,5 +28,12 @@
     "gulp-cli": "^3.1.0",
     "sass": "^1.91.0",
     "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0"
   }
 }
