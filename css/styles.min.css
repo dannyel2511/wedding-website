@@ -540,6 +540,16 @@ Intro
   text-align: center;
 }
 
+.history-img {
+  min-height: 750px;
+  background: url("../img/maggie/history.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
 /* ==========================================================================
 Features-stack
 ========================================================================== */
