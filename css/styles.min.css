@@ -18,11 +18,11 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 300;
-  color: #3D4351;
+  color: #A27D32;
 }
 
 h3 {
-  color: #3D4351;
+  color: #A27D32;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -36,7 +36,7 @@ h4 {
 
 h5 {
   font-size: 15px;
-  color: #3D4351;
+  color: #A27D32;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -427,7 +427,7 @@ Hero
 
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, 0.88);
+  background-color: rgba(59, 67, 10, 0.88);
   z-index: 999;
   width: 100%;
 }
