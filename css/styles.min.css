@@ -691,8 +691,9 @@ Features-stack
 /* ==========================================================================
 .events
 ========================================================================== */
-.events .col {
-  margin-bottom: 1.5rem;
+.events .event-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .events .leftcol {
   padding-right: 100px;
@@ -706,6 +707,9 @@ Features-stack
   font-style: italic;
   text-transform: lowercase;
   color: rgba(28, 54, 83, 0.6);
+}
+.events h5 {
+  margin-top: 0;
 }
 
 /* ==========================================================================
