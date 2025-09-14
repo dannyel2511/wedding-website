@@ -563,6 +563,9 @@ Features-stack
 .events
 ========================================================================== */
 .events {
+  .col {
+    margin-bottom: 1.5rem;
+  }
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
