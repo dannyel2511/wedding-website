@@ -1,6 +1,16 @@
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
+    $('.wpParents1').waypoint(function () {
+        $('.wpParents1').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wpParents2').waypoint(function () {
+        $('.wpParents2').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
 
     $('.wp1').waypoint(function () {
         $('.wp1').addClass('animated fadeInLeft');
