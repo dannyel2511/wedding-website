@@ -214,20 +214,20 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Boda Dany y Laura",
+            title: "Boda Jose y Margarita",
 
             // Event start date
-            start: new Date('Nov 19, 2022 14:30'),
+            start: new Date('Oct 18, 2025 12:00'),
 
             // Event duration (IN MINUTES)
-            // duration: 120,
+            duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 19, 2022 23:59'),
+            // end: new Date('Nov 19, 2022 23:59'),
 
             // Event Address
-            address: 'Iglesia Santo Tomás Jalieza Hidalgo, 71507 Santo Tomás Jalieza, Oax., México',
+            address: 'Maximiliano Amador 1, Centro, 71510 Ocotlán de Morelos, Oax., Mexico',
 
             // Event Description
             description: "Estamos muy emocionados de compartir este día contigo. Si tienes dudas, escríbenos o llámanos con confianza"
@@ -287,7 +287,7 @@ $(document).ready(function () {
         $('#div-form-inputs').addClass('animated fadeInLeft');
         $('#form-submit-button').addClass('animated fadeInLeft');
         $('#input_adults').val(adults);
-        $('#input_children').val(children);
+        // $('#input_children').val(children);
     });
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
@@ -300,7 +300,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '3b712de48137572f3849aabd5666a4e3') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Disculpa!</strong> El código es incorrecto.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbywov4NxfqTdl0MM5pcepdbsUO81e0AVxWV2tLemsd4yZWVbkuy0YWz0sJVLV1LqYBR/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwy7ljprcRXW0AQyqWHlB_Y7Bz7j4qU2wNJE2Z3gOJ3FeKExSxB00AQRjZaZU1ngRkB/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
