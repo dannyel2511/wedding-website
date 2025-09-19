@@ -287,6 +287,7 @@ $(document).ready(function () {
         $('#div-form-inputs').addClass('animated fadeInLeft');
         $('#form-submit-button').addClass('animated fadeInLeft');
         $('#input_adults').val(adults);
+        $('#input_adults').attr("max", adults);
         // $('#input_children').val(children);
     });
     /********************** RSVP **********************/
